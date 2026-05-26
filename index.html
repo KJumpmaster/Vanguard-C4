@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vanguard C4 is a squadron tactical operations suite for coordinating missions, managing readiness, and commanding the battlefield across SkyPilot, Norden II, and Scout/SONAR.">
+  <title>Vanguard C4 | Tactical Operations Center for Squadrons</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="wonder-audio" src="Wonder.mp3" loop preload="none"></audio>
+
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="brand-lockup" href="#top" aria-label="Vanguard C4 home">
+      <span class="brand-mark">V4</span>
+      <span>
+        <strong>Vanguard C4</strong>
+        <em>Tactical Operations Suite</em>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Homepage sections">
+      <a href="#suite">Suite</a>
+      <a href="#modules">Ecosystem</a>
+      <a href="#flow">Flow</a>
+      <a href="#sync">Cloud Sync</a>
+      <a href="#screens">Screens</a>
+      <a href="#mission" class="nav-cta">Build the TOC</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <video class="hero-video" autoplay muted loop playsinline poster="savage_skies.png">
+        <source src="caoc_banner.mp4" type="video/mp4">
+      </video>
+      <div class="hero-shield"></div>
+      <div class="hero-grid"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow">Into the Savage Skies — We Ascend</p>
+        <h1 id="hero-title"><span>Vanguard</span><span>C4</span></h1>
+        <p class="hero-kicker">Coordinate missions. Manage readiness. Command the battlefield.</p>
+        <p class="hero-copy">Build the tactical operations center for your squadron with a connected suite for readiness, aircraft inventory, mission planning, loadout analysis, pilot tracking, awards, AARs, and operational oversight.</p>
+        <div class="hero-actions" aria-label="Primary actions">
+          <a class="button primary" href="#modules">Explore the Suite</a>
+          <a class="button secondary" href="#flow">See the Operational Flow</a>
+        </div>
+      </div>
+
+      <aside class="mission-card" aria-label="Vanguard C4 operating summary">
+        <img class="suite-emblem" src="assets/vanguard_c4_logo_option_3.webp" alt="Vanguard C4 suite emblem">
+        <div class="mission-card-header">
+          <span class="status-light"></span>
+          <span>Suite Status</span>
+        </div>
+        <dl>
+          <div>
+            <dt>System</dt>
+            <dd>Vanguard C4</dd>
+          </div>
+          <div>
+            <dt>Mission</dt>
+            <dd>Squadron TOC</dd>
+          </div>
+          <div>
+            <dt>Modules</dt>
+            <dd>SkyPilot · Norden II · Scout / SONAR</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="section intro" id="suite" aria-labelledby="suite-title">
+      <div class="section-heading">
+        <p class="eyebrow">Not a spreadsheet. Not a single-purpose utility.</p>
+        <h2 id="suite-title">A squadron operating system for organized tactical teams.</h2>
+      </div>
+      <div class="intro-copy">
+        <p>Vanguard C4 began as a bombing evaluation spreadsheet and evolved into a full squadron leadership and mission-management platform for the War Thunder community. The promise is bigger than replacing old files: it turns fragmented planning, pilot tracking, aircraft readiness, and mission coordination into one living operational picture.</p>
+        <p>The first impression is simple: this is where a squadron stops improvising and starts operating with shared intent, visible readiness, and disciplined tactical rhythm.</p>
+      </div>
+    </section>
+
+    <section class="module-section" id="modules" aria-labelledby="modules-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">The Ecosystem</p>
+        <h2 id="modules-title">Three connected systems. One tactical operations center.</h2>
+      </div>
+
+      <div class="module-grid">
+        <article class="module-card sky">
+          <div class="module-media">
+            <video autoplay muted loop playsinline poster="assets/sky_pilot_banner_optimized.webp">
+              <source src="assets/sky_pilot_logo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="module-body">
+            <p class="module-label">Readiness · Inventory · Command Visibility</p>
+            <h3>SkyPilot</h3>
+            <p>Transform spreadsheets into a living operational air wing. Track aircraft readiness, pilot certifications, squadron status, combat power, and the aircraft registry that feeds the rest of the suite.</p>
+            <a href="research.html" class="text-link">Preview SkyPilot</a>
+          </div>
+        </article>
+
+        <article class="module-card norden featured">
+          <div class="module-media">
+            <video autoplay muted loop playsinline poster="assets/norden_ii_banner.webp">
+              <source src="assets/norden_ii_logo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="module-body">
+            <p class="module-label">Mission Planning · Loadouts · Strike Analysis</p>
+            <h3>Norden II</h3>
+            <p>Build tactical loadouts with mission-driven recommendations, visualize strike packages, validate attack plans, and refine mission effectiveness before the first aircraft launches.</p>
+            <a href="https://kjumpmaster.github.io/NORDEN_II/index.html" class="text-link">Open Norden II</a>
+          </div>
+        </article>
+
+        <article class="module-card scout">
+          <div class="module-media image-media scout-media">
+            <img src="assets/scout_logo_concept_03_patch.webp" alt="Scout reconnaissance and tasking patch">
+          </div>
+          <div class="module-body">
+            <p class="module-label">SONAR · Mission Command · Operational Coordination</p>
+            <h3>S.C.O.U.T.</h3>
+            <p>Coordinate pilots, sorties, schedules, AARs, recognition, awards, personnel jackets, and operational tempo from the mission-command layer of Vanguard C4.</p>
+            <a href="https://kjumpmaster.github.io/caoc-site/manifest.html" class="text-link">Review Scout Concept</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="flow" aria-labelledby="flow-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">The Operational Flow</p>
+        <h2 id="flow-title">This is where the suite becomes obvious.</h2>
+      </div>
+      <div class="flow-chain" aria-label="Vanguard C4 operational flow">
+        <article>
+          <span>01</span>
+          <h3>SkyPilot</h3>
+          <p>Establish readiness, aircraft inventory, certifications, and squadron status.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Norden II</h3>
+          <p>Build the loadout, shape the strike package, and validate mission effectiveness.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>S.C.O.U.T.</h3>
+          <p>Coordinate tasking, pilots, schedules, operational tempo, and command oversight.</p>
+        </article>
+        <article>
+          <span>04</span>
+          <h3>Execute</h3>
+          <p>Launch with shared intent, clearer assignments, and a unified tactical picture.</p>
+        </article>
+        <article>
+          <span>05</span>
+          <h3>Improve</h3>
+          <p>Capture AARs, lessons learned, recognition, awards, and readiness updates.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section sync-section" id="sync" aria-labelledby="sync-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">Secure Cloud Sync</p>
+        <h2 id="sync-title">Approved data moves through Vanguard C4, not scattered file handoffs.</h2>
+        <p>Vanguard C4 connects SkyPilot, Norden II, and S.C.O.U.T. through a secure cloud-sync layer backed by Azure. SkyPilot provides aircraft readiness and CPR data. Norden II provides validated loadouts, mission CPR, and strike-planning outputs. S.C.O.U.T. / SONAR brings those feeds together into the squadron command picture.</p>
+      </div>
+
+      <div class="sync-layout">
+        <figure class="sync-diagram">
+          <img src="assets/vanguard_cloud_sync_diagram.webp" alt="Vanguard C4 cloud sync diagram connecting SkyPilot, Norden II, S.C.O.U.T., Azure backend, and squadron roles">
+          <figcaption>Vanguard Cloud Sync distributes approved readiness, mission, loadout, status, and command updates through the Azure backend.</figcaption>
+        </figure>
+
+        <div class="sync-copy">
+          <p>Using Azure as the backend, squadron data can be stored, updated, and distributed without manually passing files through Google Drive. Commanders, flight captains, sortie leads, and pilots can each receive the latest approved operational data for their role.</p>
+          <div class="sync-pipeline" aria-label="Vanguard C4 module data responsibilities">
+            <article>
+              <span>SkyPilot</span>
+              <strong>Readiness Source</strong>
+              <p>Aircraft readiness, CPR, registry status, pilot qualifications, and unit availability.</p>
+            </article>
+            <article>
+              <span>Norden II</span>
+              <strong>Fight Plan Source</strong>
+              <p>Validated loadouts, mission CPR, strike planning, SPC, MAC, and mission outputs.</p>
+            </article>
+            <article>
+              <span>S.C.O.U.T. / SONAR</span>
+              <strong>Command Picture</strong>
+              <p>Roster, mission tasking, AARs, approvals, battle rhythm, and operational updates.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen-section" id="screens" aria-labelledby="screens-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">Emotion, then evidence</p>
+        <h2 id="screens-title">The depth is in the system.</h2>
+        <p>These previews should make visitors understand that Vanguard C4 is already becoming a complete operational environment, not a concept slide.</p>
+      </div>
+      <div class="screen-grid">
+        <figure class="screen-card wide">
+          <img src="assets/sonar_map_preview.webp" alt="SONAR command map preview">
+          <figcaption>SONAR command view for squadron status and operational tempo.</figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="assets/personnel_jacket_preview.webp" alt="Personnel jacket readiness preview">
+          <figcaption>Personnel jackets, certifications, mission history, and readiness context.</figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="assets/recognition_preview.webp" alt="Recognition and awards workflow preview">
+          <figcaption>Recognition, nominations, awards, and squadron culture workflows.</figcaption>
+        </figure>
+        <figure class="screen-card wide">
+          <img src="assets/aircraft_registry_preview.webp" alt="Aircraft registry preview">
+          <figcaption>Aircraft registry management connected to pilot capability and mission planning.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="mission-banner" id="mission" aria-labelledby="mission-title">
+      <div>
+        <p class="eyebrow">Built for squadrons that want discipline, tempo, and clarity.</p>
+        <h2 id="mission-title">Give your team a tactical operations center before the mission begins.</h2>
+        <p>From pilot readiness to strike package execution, Vanguard C4 connects the entire operational chain without burying your team in disconnected files, scattered notes, or improvised coordination.</p>
+        <div class="tagline-stack" aria-label="Vanguard C4 plain-language module summary">
+          <p><strong>SkyPilot</strong> tells you what is ready.</p>
+          <p><strong>Norden II</strong> tells you how to fight.</p>
+          <p><strong>S.C.O.U.T.</strong> tells the squadron what to do.</p>
+          <p><strong>Vanguard C4</strong> keeps it all connected.</p>
+        </div>
+      </div>
+      <button class="button audio-toggle" type="button" id="audio-toggle" aria-pressed="false">Play “Wonder”</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Vanguard C4</strong> · SkyPilot · Norden II · S.C.O.U.T. / SONAR</p>
+    <p>Into the Savage Skies — We Ascend</p>
+  </footer>
+
+  <script>
+    const audio = document.getElementById('wonder-audio');
+    const toggle = document.getElementById('audio-toggle');
+
+    if (audio && toggle) {
+      toggle.addEventListener('click', async () => {
+        try {
+          if (audio.paused) {
+            await audio.play();
+            toggle.textContent = 'Pause “Wonder”';
+            toggle.setAttribute('aria-pressed', 'true');
+          } else {
+            audio.pause();
+            toggle.textContent = 'Play “Wonder”';
+            toggle.setAttribute('aria-pressed', 'false');
+          }
+        } catch (error) {
+          toggle.textContent = 'Audio unavailable';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

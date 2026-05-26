@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sky Pilot Research Tree</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <section class="main">
+      <div class="toolbar">
+        <div>
+          <strong>Sky Pilot Research Tree</strong><br />
+          <span>USA tree viewer</span>
+        </div>
+
+        <div class="legend">
+          <div class="pill"><span class="dot standard"></span> Tech Tree</div>
+          <div class="pill"><span class="dot premium"></span> Premium</div>
+          <div class="pill"><span class="dot squadron"></span> Squadron</div>
+          <div class="pill"><span class="dot event"></span> Event</div>
+          <div class="pill"><span class="dot pack"></span> Pack</div>
+        </div>
+      </div>
+
+      <div class="tree-scroll">
+        <div class="tree-shell" id="treeShell">
+          <div class="tree-grid"></div>
+          <div class="rank-layer" id="rankLayer"></div>
+          <div class="edge-layer" id="edgeLayer"></div>
+          <div class="node-layer" id="nodeLayer"></div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="sidebar-head">
+        <h2>Aircraft Details</h2>
+        <p>Select an aircraft card to inspect placement, metadata, grouped members, and type tags.</p>
+      </div>
+
+      <div class="detail" id="detailPanel">
+        <div class="empty-state">Pick a card in the tree.</div>
+      </div>
+    </aside>
+  </div>
+
+  <div class="status" id="statusBox">SCRIPT BOOTED</div>
+
+  <script src="engine.js"></script>
+</body>
+</html>

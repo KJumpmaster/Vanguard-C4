@@ -1,0 +1,17 @@
+---
+---
+@import "{{ site.theme }}";
+
+body {
+  background-color: #050505 !important;
+  color: #33ff33 !important;
+  font-family: 'Courier New', monospace;
+}
+
+a {
+  color: #00ff00;
+  &:hover {
+    color: #ffffff;
+    background-color: #004400;
+  }
+}
