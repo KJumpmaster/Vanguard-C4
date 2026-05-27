@@ -153,46 +153,137 @@ a {
   gap: clamp(1rem, 4vw, 4rem);
   padding: clamp(7rem, 12vh, 9rem) clamp(1rem, 5vw, 5rem) clamp(4rem, 10vh, 6rem);
   overflow: hidden;
+  isolation: isolate;
+  background: #050607;
 }
 
+.hero-bg-stack,
+.hero-metal-base,
+.hero-fallback-image,
 .hero-video,
 .hero-shield,
-.hero-grid {
+.hero-grid,
+.hero-radial-vignette {
   position: absolute;
   inset: 0;
 }
 
+.hero-bg-stack {
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-metal-base {
+  z-index: 1;
+  background-image:
+    linear-gradient(135deg, rgba(0, 0, 0, 0.35), rgba(255, 255, 255, 0.04)),
+    url("metal_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+  transform: scale(1.04);
+}
+
+.hero-fallback-image {
+  z-index: 2;
+  background-image: url("savage_skies.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.68;
+  mix-blend-mode: screen;
+  filter: contrast(1.08) saturate(0.95) brightness(0.82);
+}
+
 .hero-video {
+  z-index: 3;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.52;
-  filter: saturate(0.95) contrast(1.05);
+  object-position: center;
+  opacity: 0.82;
+  filter: contrast(1.12) saturate(0.9) brightness(0.72);
 }
 
 .hero-shield {
+  z-index: 4;
   background:
-    linear-gradient(90deg, rgba(5,8,13,0.95) 0%, rgba(5,8,13,0.74) 42%, rgba(5,8,13,0.52) 70%, rgba(5,8,13,0.86) 100%),
-    linear-gradient(0deg, rgba(5,8,13,1) 0%, transparent 25%, transparent 72%, rgba(5,8,13,0.68) 100%);
+    linear-gradient(90deg, rgba(5,8,13,0.95) 0%, rgba(5,8,13,0.76) 38%, rgba(5,8,13,0.42) 68%, rgba(5,8,13,0.82) 100%),
+    linear-gradient(0deg, rgba(5,8,13,1) 0%, rgba(5,8,13,0.34) 25%, transparent 66%, rgba(5,8,13,0.72) 100%);
 }
 
 .hero-grid {
-  opacity: 0.28;
+  z-index: 5;
+  opacity: 0.24;
   background:
     repeating-linear-gradient(0deg, transparent, transparent 58px, rgba(125,215,255,0.18) 60px),
     repeating-linear-gradient(90deg, transparent, transparent 58px, rgba(125,215,255,0.16) 60px);
   mask-image: radial-gradient(circle at 40% 45%, black, transparent 74%);
 }
 
+.hero-radial-vignette {
+  z-index: 6;
+  background:
+    radial-gradient(circle at 72% 38%, rgba(255, 255, 255, 0.12), transparent 28%),
+    radial-gradient(circle at center, transparent 42%, rgba(0, 0, 0, 0.74) 100%);
+}
+
+.hero-intro-mark {
+  position: absolute;
+  z-index: 7;
+  top: 13%;
+  left: -8%;
+  width: 120%;
+  transform: rotate(-9deg) translateY(-10px);
+  color: rgba(232, 210, 156, 0.2);
+  font-family: "Rajdhani", sans-serif;
+  font-size: clamp(2.2rem, 8vw, 8rem);
+  line-height: 0.9;
+  font-weight: 800;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  text-shadow: 0 0 38px rgba(255, 210, 120, 0.22);
+  animation: heroIntroSweep 4.8s ease-out forwards;
+  pointer-events: none;
+}
+
 .hero-content,
 .mission-card {
   position: relative;
-  z-index: 2;
+  z-index: 8;
 }
 
 .hero-content {
   max-width: 880px;
   text-align: center;
+}
+
+@keyframes heroIntroSweep {
+  0% {
+    opacity: 0;
+    transform: rotate(-9deg) translateX(-10%) translateY(-18px) scale(0.98);
+    filter: blur(8px);
+  }
+
+  18% {
+    opacity: 0.82;
+    filter: blur(0);
+  }
+
+  58% {
+    opacity: 0.38;
+    transform: rotate(-9deg) translateX(2%) translateY(-10px) scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotate(-9deg) translateX(10%) translateY(-6px) scale(1.04);
+    filter: blur(5px);
+  }
 }
 
 .eyebrow {
@@ -799,6 +890,13 @@ dd {
     padding-top: 7rem;
   }
 
+  .hero-intro-mark {
+    top: 16%;
+    left: -18%;
+    width: 140%;
+    font-size: clamp(2rem, 12vw, 4.8rem);
+  }
+
   .module-grid,
   .workflow-grid,
   .flow-chain,
@@ -844,5 +942,21 @@ dd {
 
   .button {
     width: 100%;
+  }
+
+  .hero-shield {
+    background:
+      linear-gradient(180deg, rgba(5,8,13,0.78) 0%, rgba(5,8,13,0.56) 42%, rgba(5,8,13,0.92) 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-intro-mark {
+    animation: none;
+    opacity: 0.18;
+  }
+
+  .hero-video {
+    display: none;
   }
 }

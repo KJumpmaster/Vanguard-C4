@@ -32,12 +32,19 @@
   </header>
 
   <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
-      <video class="hero-video" autoplay muted loop playsinline poster="savage_skies.png">
-        <source src="caoc_banner.mp4" type="video/mp4">
-      </video>
-      <div class="hero-shield"></div>
-      <div class="hero-grid"></div>
+    <section class="hero hero-layered" aria-labelledby="hero-title">
+      <div class="hero-bg-stack" aria-hidden="true">
+        <div class="hero-metal-base"></div>
+        <div class="hero-fallback-image"></div>
+        <video class="hero-video hero-bg-video" autoplay muted loop playsinline preload="metadata" poster="savage_skies.png">
+          <source src="caoc_banner.mp4" type="video/mp4">
+        </video>
+        <div class="hero-shield hero-video-grade"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-radial-vignette"></div>
+      </div>
+
+      <div class="hero-intro-mark" aria-hidden="true">Into the Savage Skies — We Ascend</div>
 
       <div class="hero-content">
         <p class="eyebrow">Into the Savage Skies — We Ascend</p>
