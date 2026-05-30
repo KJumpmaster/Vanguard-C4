@@ -498,6 +498,33 @@ dd {
   margin-bottom: 0;
 }
 
+.proof-strip,
+.command-status-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 1.35rem;
+}
+
+.proof-strip span,
+.command-status-strip span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid rgba(125, 215, 255, 0.24);
+  border-radius: 999px;
+  color: #dff4ff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background:
+    linear-gradient(135deg, rgba(125, 215, 255, 0.12), rgba(111, 255, 178, 0.07)),
+    rgba(5, 8, 13, 0.55);
+}
+
 .centered {
   max-width: 850px;
   margin: 0 auto 2.2rem;
@@ -689,6 +716,11 @@ dd {
   box-shadow: var(--shadow);
 }
 
+.sync-diagram a {
+  display: block;
+  cursor: zoom-in;
+}
+
 .sync-diagram img {
   display: block;
   width: 100%;
@@ -707,6 +739,11 @@ dd {
   border-top: 1px solid rgba(125, 215, 255, 0.16);
 }
 
+.sync-diagram figcaption a {
+  color: var(--green);
+  font-weight: 800;
+}
+
 .sync-copy {
   padding: clamp(1.1rem, 3vw, 1.6rem);
 }
@@ -714,6 +751,20 @@ dd {
 .sync-copy > p {
   color: var(--muted);
   line-height: 1.75;
+}
+
+.doctrine-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid rgba(243, 189, 84, 0.24);
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(243, 189, 84, 0.11), rgba(125, 215, 255, 0.06)),
+    rgba(5, 8, 13, 0.58);
+}
+
+.doctrine-note strong {
+  color: var(--amber);
 }
 
 .sync-pipeline {
@@ -763,11 +814,18 @@ dd {
   border-top: 1px solid var(--line);
 }
 
-.screen-grid {
+.screen-collage {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
   gap: 1rem;
+  align-items: stretch;
   margin-top: 2rem;
+}
+
+.supporting-proof-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .screen-card {
@@ -779,20 +837,30 @@ dd {
   box-shadow: var(--shadow);
 }
 
-.screen-card.wide {
-  grid-column: span 2;
+.screen-card.hero-proof {
+  border-color: rgba(111, 255, 178, 0.3);
+  background:
+    linear-gradient(135deg, rgba(111, 255, 178, 0.08), rgba(125, 215, 255, 0.04)),
+    rgba(5, 8, 13, 0.82);
 }
 
 .screen-card img {
   display: block;
   width: 100%;
-  aspect-ratio: 16 / 7.4;
-  object-fit: cover;
-  opacity: 0.92;
+  aspect-ratio: 16 / 8;
+  object-fit: contain;
+  background:
+    radial-gradient(circle at 50% 0%, rgba(125, 215, 255, 0.09), transparent 38rem),
+    #02050a;
+  opacity: 0.94;
 }
 
-.screen-card:not(.wide) img {
-  aspect-ratio: 16 / 9.8;
+.screen-card.hero-proof img {
+  aspect-ratio: 16 / 8.6;
+}
+
+.supporting-proof-grid .screen-card img {
+  aspect-ratio: 16 / 6.6;
 }
 
 .screen-card figcaption {
@@ -800,6 +868,18 @@ dd {
   color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.55;
+}
+
+.screen-card figcaption strong {
+  color: var(--text);
+}
+
+.screen-routing-note {
+  max-width: 900px;
+  margin: 1.2rem auto 0;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.7;
 }
 
 .mission-banner {
@@ -901,12 +981,12 @@ dd {
   .workflow-grid,
   .flow-chain,
   .sync-layout,
-  .screen-grid {
+  .screen-collage {
     grid-template-columns: 1fr;
   }
 
-  .screen-card.wide {
-    grid-column: auto;
+  .supporting-proof-grid {
+    grid-template-columns: 1fr;
   }
 
   .flow-chain article:not(:last-child)::after {
@@ -1079,6 +1159,14 @@ dd {
   line-height: 1.18;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+}
+
+.command-status-strip span {
+  border-color: rgba(111, 255, 178, 0.3);
+  color: #f1fff8;
+  background:
+    linear-gradient(135deg, rgba(111, 255, 178, 0.15), rgba(125, 215, 255, 0.08)),
+    rgba(5, 8, 13, 0.62);
 }
 
 @media (max-width: 940px) {

@@ -92,6 +92,12 @@
       <div class="intro-copy">
         <p>Vanguard C4 evolved from a simple evaluation tool into a full squadron leadership and mission-management platform for organized virtual aviation teams. The promise is bigger than replacing old files: it turns fragmented planning, pilot tracking, aircraft readiness, and mission coordination into one living operational picture.</p>
         <p>The first impression is simple: this is where a squadron stops improvising and starts operating with shared intent, visible readiness, and disciplined tactical rhythm.</p>
+        <div class="proof-strip" aria-label="Vanguard C4 operating proof points">
+          <span>Personnel</span>
+          <span>Aircraft</span>
+          <span>Mission Ops</span>
+          <span>AAR / Recognition</span>
+        </div>
       </div>
     </section>
 
@@ -196,12 +202,15 @@
 
       <div class="sync-layout">
         <figure class="sync-diagram">
-          <img src="assets/vanguard_cloud_sync_diagram.webp" alt="Vanguard C4 cloud sync diagram connecting SkyPilot, Norden II, S.C.O.U.T., Azure backend, and squadron roles">
-          <figcaption>Vanguard Cloud Sync distributes approved readiness, mission, loadout, status, and command updates through the Azure backend.</figcaption>
+          <a href="assets/vanguard_c4_comm_architecture_vertical_clean_trimmed.png" target="_blank" rel="noopener" aria-label="Open the full Vanguard C4 communications architecture diagram">
+            <img src="assets/vanguard_cloud_sync_diagram.webp" alt="Vanguard C4 cloud sync diagram connecting SkyPilot, Norden II, S.C.O.U.T., Azure backend, and squadron roles">
+          </a>
+          <figcaption>Vanguard Cloud Sync distributes approved readiness, mission, loadout, status, and command updates through the Azure backend. <a href="assets/vanguard_c4_comm_architecture_vertical_clean_trimmed.png" target="_blank" rel="noopener">Open the full communications architecture</a>.</figcaption>
         </figure>
 
         <div class="sync-copy">
           <p>Using Azure as the backend, squadron data can be stored, updated, and distributed without manually passing files through Google Drive. Commanders, flight captains, sortie leads, and pilots can each receive the latest approved operational data for their role.</p>
+          <p class="doctrine-note"><strong>Command-control layer:</strong> S.C.O.U.T. is where the Decagon C2 operating logic becomes command rhythm: personnel, commander’s intent, skills, readiness, logistics / aircraft, intel assessment, mission ops, execution, AAR, and recognition.</p>
           <div class="sync-pipeline" aria-label="Vanguard C4 module data responsibilities">
             <article>
               <span>SkyPilot</span>
@@ -225,28 +234,31 @@
 
     <section class="screen-section" id="screens" aria-labelledby="screens-title">
       <div class="section-heading centered">
-        <p class="eyebrow">Emotion, then evidence</p>
-        <h2 id="screens-title">The depth is in the system.</h2>
-        <p>These previews should make visitors understand that Vanguard C4 is already becoming a complete operational environment, not a concept slide.</p>
+        <p class="eyebrow">A glimpse of the system</p>
+        <h2 id="screens-title">Show enough to prove it. Save the depth for the product pages.</h2>
+        <p>The homepage should not become a manual. It should give visitors a fast visual proof that Vanguard C4 covers the fight, the squadron, and the command rhythm, then route them into the page that matches their problem.</p>
       </div>
-      <div class="screen-grid">
-        <figure class="screen-card wide">
-          <img src="assets/sonar_map_preview.webp" alt="SONAR command map preview">
-          <figcaption>SONAR command view for squadron status and operational tempo.</figcaption>
+      <div class="screen-collage" aria-label="Vanguard C4 proof collage">
+        <figure class="screen-card hero-proof">
+          <img src="assets/norden_loadout_manager_primary.webp" alt="Norden II aircraft loadout manager with weapon stations, mission radar, and package slots">
+          <figcaption><strong>Norden II Loadout Manager:</strong> the strongest tactical proof point for visitors who care about aircraft, weapons, mission fit, and strike package execution.</figcaption>
         </figure>
-        <figure class="screen-card">
-          <img src="assets/personnel_jacket_preview.webp" alt="Personnel jacket readiness preview">
-          <figcaption>Personnel jackets, certifications, mission history, and readiness context.</figcaption>
-        </figure>
-        <figure class="screen-card">
-          <img src="assets/recognition_preview.webp" alt="Recognition and awards workflow preview">
-          <figcaption>Recognition, nominations, awards, and squadron culture workflows.</figcaption>
-        </figure>
-        <figure class="screen-card wide">
-          <img src="assets/aircraft_registry_preview.webp" alt="Aircraft registry preview">
-          <figcaption>Aircraft registry management connected to pilot capability and mission planning.</figcaption>
-        </figure>
+        <div class="supporting-proof-grid">
+          <figure class="screen-card">
+            <img src="assets/sonar_recognition_wall_primary.webp" alt="SONAR personnel jacket career showcase with medals and ribbon rack">
+            <figcaption><strong>Recognition Wall:</strong> the squadron culture layer that turns missions, service, honors, and AAR outcomes into visible history.</figcaption>
+          </figure>
+          <figure class="screen-card">
+            <img src="assets/vanguard_mission_package_builder.webp" alt="Vanguard C4 mission package builder defining required strike, fighter, and bomber roles">
+            <figcaption><strong>Mission Package Builder:</strong> commanders can define the package they need and see whether the squadron can actually field it.</figcaption>
+          </figure>
+          <figure class="screen-card">
+            <img src="assets/squadron_capability_radar_filters.webp" alt="Operational readiness dashboard with capability radar, nation mix, and role filters">
+            <figcaption><strong>Capability Filters:</strong> readiness becomes actionable by role, nation, tactical band, aircraft, and mission requirement.</figcaption>
+          </figure>
+        </div>
       </div>
+      <p class="screen-routing-note">Weekly scheduler input and squadron availability are major S.C.O.U.T. command features, but they belong on the S.C.O.U.T. / Squadron Command page where the planning workflow can be explained properly.</p>
     </section>
 
     <section class="section command-callout" aria-labelledby="command-callout-title">
@@ -254,6 +266,14 @@
         <p class="eyebrow">From tracking to command</p>
         <h2 id="command-callout-title">Stop managing your squadron with spreadsheets. Start commanding it with Vanguard C4.</h2>
         <p>Know your people. Know your aircraft. Know your missions. Know your readiness. Know when your squadron is ready to launch.</p>
+        <div class="command-status-strip" aria-label="Vanguard C4 command cycle">
+          <span>Intent</span>
+          <span>Readiness</span>
+          <span>Mission Ops</span>
+          <span>Execution</span>
+          <span>AAR</span>
+          <span>Recognition</span>
+        </div>
       </div>
     </section>
 
