@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vanguard C4 overview: how SkyPilot, Norden II, and S.C.O.U.T./SONAR connect into a squadron tactical operations suite with cloud-sync architecture.">
+  <title>Vanguard C4 Overview | Connected Tactical Operations Suite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" aria-label="Primary navigation">
+    <a class="brand-lockup" href="index.html" aria-label="Vanguard C4 home">
+      <span class="brand-mark">V4</span>
+      <span>
+        <strong>Vanguard C4</strong>
+        <em>Tactical Operations Suite</em>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Product navigation">
+      <a href="overview.html">Overview</a>
+      <a href="skypilot.html">SkyPilot</a>
+      <a href="norden-ii.html">Norden II</a>
+      <a href="scout-sonar.html">S.C.O.U.T.</a>
+      <a href="index.html#mission" class="nav-cta">Build the TOC</a>
+    </nav>
+  </header>
+
+  <main class="subpage-main">
+    <section class="product-hero suite-hero" aria-labelledby="overview-title">
+      <div class="product-hero-copy">
+        <p class="eyebrow">Suite Overview</p>
+        <h1 id="overview-title">One operating picture for the squadron.</h1>
+        <p class="hero-kicker">SkyPilot shows what is ready. Norden II shows how to fight. S.C.O.U.T. / SONAR turns it into command rhythm.</p>
+        <p class="hero-copy">Vanguard C4 is the connective layer between aircraft readiness, loadout planning, mission workflow, live status, after-action learning, and recognition. The suite is designed so each module owns a clear operational lane while approved data moves through a shared command picture.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="scout-sonar.html">Command the Squadron</a>
+          <a class="button secondary" href="norden-ii.html">Plan the Strike</a>
+        </div>
+      </div>
+      <figure class="product-hero-visual architecture-proof">
+        <a href="assets/vanguard_c4_comm_architecture_vertical_clean_trimmed.png" target="_blank" rel="noopener" aria-label="Open full Vanguard C4 communications architecture diagram">
+          <img src="assets/vanguard_cloud_sync_diagram.webp" alt="Vanguard C4 cloud sync architecture connecting SkyPilot, Norden II, S.C.O.U.T., Azure backend, and squadron roles">
+        </a>
+        <figcaption>Click to open the full communications architecture. The overview page keeps the concept simple: approved data moves by operational need, not scattered handoffs.</figcaption>
+      </figure>
+    </section>
+
+    <section class="section split-intel" aria-labelledby="ownership-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">Data Ownership</p>
+        <h2 id="ownership-title">Each system owns a clear operational lane.</h2>
+        <p>Vanguard C4 is strongest when the modules do not compete for authority. SkyPilot owns aircraft readiness and registry data. Norden II owns loadout construction and validation. S.C.O.U.T. / SONAR owns command decisions, mission records, personnel workflow, AARs, recognition, and operational visibility.</p>
+      </div>
+      <div class="ownership-grid">
+        <article>
+          <span>01</span>
+          <h3>SkyPilot</h3>
+          <p>Aircraft inventory, aircraft readiness, pilot certifications, registry status, and combat-power inputs begin here before they feed mission planning.</p>
+          <a class="text-link" href="skypilot.html">Track Aircraft Readiness</a>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Norden II</h3>
+          <p>Loadout intelligence, weapon station detail, mission effectiveness, validation state, compact ordnance summaries, and strike-package planning belong here.</p>
+          <a class="text-link" href="norden-ii.html">Plan the Strike</a>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>S.C.O.U.T. / SONAR</h3>
+          <p>Personnel, missions, availability, commander intent, execution status, AARs, recognition, and Decagon C2 operating rhythm come together here.</p>
+          <a class="text-link" href="scout-sonar.html">Command the Squadron</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section sync-section" aria-labelledby="movement-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">Approved Data Movement</p>
+        <h2 id="movement-title">Different updates move at different speeds.</h2>
+        <p>The suite does not need to push everything everywhere. Live status should move immediately, routine updates should move through deliberate daily operations sync, and mission activity should travel with the mission record.</p>
+      </div>
+      <div class="sync-layout">
+        <figure class="sync-diagram">
+          <img src="assets/vanguard_data_movement_flow.webp" alt="Vanguard C4 approved data movement flow across suite modules">
+          <figcaption>Vanguard C4 separates live updates, daily reports, and mission transactions so the command picture stays useful without becoming noisy.</figcaption>
+        </figure>
+        <div class="sync-copy">
+          <p class="doctrine-note"><strong>Architecture rule:</strong> mission data travels with the mission; live status travels immediately; daily reports carry routine operator updates.</p>
+          <div class="sync-pipeline">
+            <article>
+              <span>Live Status</span>
+              <strong>Immediate updates</strong>
+              <p>SONAR presence, ready state, mission-active status, standby, training, or command attention indicators should be visible quickly.</p>
+            </article>
+            <article>
+              <span>Daily Operations</span>
+              <strong>Deliberate sync</strong>
+              <p>Aircraft registry deltas, certifications, awards, skills, and routine personnel updates move as approved report packages.</p>
+            </article>
+            <article>
+              <span>Mission Transactions</span>
+              <strong>Mission-number linked</strong>
+              <p>Mission creation, force allocation, loadout review, execution, AAR, and recognition stay attached to the operational record.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section proof-section" aria-labelledby="suite-proof-title">
+      <div class="section-heading centered">
+        <p class="eyebrow">The Suite in Motion</p>
+        <h2 id="suite-proof-title">From registry to launch decision.</h2>
+        <p>Vanguard C4 gives command a practical chain of answers. It begins with available people and aircraft, moves through loadout and mission planning, then returns lessons and recognition back into squadron history.</p>
+      </div>
+      <div class="proof-grid two-up">
+        <figure class="screen-card">
+          <img src="assets/vanguard_mission_package_builder.webp" alt="Mission package builder defining role requirements for a squadron operation">
+          <figcaption><strong>Mission Package Builder:</strong> command defines the force package and checks whether the squadron can field the required roles.</figcaption>
+        </figure>
+        <figure class="screen-card">
+          <img src="assets/norden_loadout_manager_primary.webp" alt="Norden II loadout manager with aircraft stations, mission radar, and package information">
+          <figcaption><strong>Loadout Review:</strong> Norden II provides the tactical loadout package that S.C.O.U.T. can review in mission context.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="mission-banner subpage-cta" aria-labelledby="overview-cta-title">
+      <div>
+        <p class="eyebrow">Choose the operational problem</p>
+        <h2 id="overview-cta-title">Route straight into the page that matches the mission.</h2>
+        <p>Use the overview when you need the whole architecture. Use SkyPilot for readiness, Norden II for strike planning, and S.C.O.U.T. / SONAR for command rhythm and squadron operations.</p>
+      </div>
+      <a class="button primary" href="index.html#routing">Pick a Path</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong>Vanguard C4</strong> · Suite Overview</p>
+    <p><a href="index.html">Home</a></p>
+  </footer>
+</body>
+</html>
