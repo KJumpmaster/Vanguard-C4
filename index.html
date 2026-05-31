@@ -78,7 +78,7 @@
           </div>
           <div class="launch-countdown" aria-label="Marketing launch countdown">
             <dt>Launch Clock</dt>
-            <dd><span id="launch-day-label">D-14</span> <small id="launch-clock">14d 00h 00m 00s</small></dd>
+            <dd><span id="launch-day-label">D-21</span> <small id="launch-clock">21d 00h 00m 00s</small></dd>
           </div>
           <div>
             <dt>Modules</dt>
@@ -356,7 +356,7 @@
 
     const launchDayLabel = document.getElementById('launch-day-label');
     const launchClock = document.getElementById('launch-clock');
-    const launchTarget = new Date('2026-06-13T00:00:00-07:00');
+    const launchTarget = new Date('2026-06-19T14:00:00-07:00');
 
     function updateLaunchCountdown() {
       if (!launchDayLabel || !launchClock) return;
@@ -367,7 +367,7 @@
       const hours = Math.floor((totalSeconds % 86400) / 3600);
       const minutes = Math.floor((totalSeconds % 3600) / 60);
       const seconds = totalSeconds % 60;
-      launchDayLabel.textContent = remaining > 0 ? `D-${days + 1}` : 'D-Day';
+      launchDayLabel.textContent = remaining > 0 ? 'D-21' : 'D-Day';
       launchClock.textContent = `${days}d ${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
     }
 
