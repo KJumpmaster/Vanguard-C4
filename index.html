@@ -76,6 +76,10 @@
             <dt>Mission</dt>
             <dd>Squadron TOC</dd>
           </div>
+          <div class="launch-countdown" aria-label="Marketing launch countdown">
+            <dt>Launch Clock</dt>
+            <dd><span id="launch-day-label">D-14</span> <small id="launch-clock">14d 00h 00m 00s</small></dd>
+          </div>
           <div>
             <dt>Modules</dt>
             <dd>SkyPilot · Norden II · Scout / SONAR</dd>
@@ -105,9 +109,22 @@
       <div class="experience-panel">
         <p class="eyebrow">Built from operational experience</p>
         <h2 id="experience-title">Vanguard C4 was built from experience, not theory.</h2>
-        <p>Its foundation comes from 37 years of technical and operational work, including 20 years of Army service and 17 years supporting technical operations and advisory missions. That experience spans field operations in Iraq and Afghanistan, training soldiers at every level, deploying operational tools, supporting joint and combined operations, and working in command environments where readiness, accountability, and mission clarity matter.</p>
-        <p>Vanguard C4 brings that mindset into a modern tactical operations platform: know your people, know your aircraft, know your missions, and know when your squadron is ready to launch.</p>
+        <p>Its foundation comes from 37 years of tactical and operational work, including 20 years of Army service and 17 years supporting tactical operations, combat missions, and advisory missions. That experience spans field operations and combat operations across Europe, the Middle East, and Central America.</p>
+        <p>It includes training soldiers at every level, from squad-level leadership through company, battalion, and brigade operations, including division-level staff work; developing and deploying operational tools; supporting joint and combined operations; and working in command environments where readiness, accountability, and mission clarity meant human life.</p>
+        <p>Vanguard C4 brings that mindset into a modern tactical operations platform: know your people, know your enemy, know your equipment, know your missions, and know when your team and squadron are ready to launch.</p>
       </div>
+    </section>
+
+    <section class="section evolution-section" id="evolution" aria-labelledby="evolution-title">
+      <div class="evolution-copy">
+        <p class="eyebrow">From field expedient to mission system</p>
+        <h2 id="evolution-title">Norden II evolved from spreadsheet-based planning into a tactical loadout engine.</h2>
+        <p>The early work began with the practical need to organize aircraft, stores, effects, mission purpose, and commander decision points in a form a team could actually use. Norden II is the current expression of that idea: a purpose-built loadout and mission-planning environment that replaces static tables with aircraft context, hardpoint visibility, package review, and command handoff.</p>
+      </div>
+      <figure class="evolution-visual">
+        <img src="assets/norden_loadout_manager_primary.webp" alt="Norden II loadout manager showing aircraft hardpoints, selected stores, mission radar, and package slots">
+        <figcaption>Current state: Norden II turns the original planning discipline into a visual loadout manager and mission package workflow.</figcaption>
+      </figure>
     </section>
 
     <section class="module-section" id="modules" aria-labelledby="modules-title">
@@ -300,7 +317,7 @@
       <div class="command-callout-panel">
         <p class="eyebrow">From tracking to command</p>
         <h2 id="command-callout-title">Stop improvising squadron command. Start operating with Vanguard C4.</h2>
-        <p>Know your people. Know your aircraft. Know your missions. Know your readiness. Know when your squadron is ready to launch.</p>
+        <p>Know your people. Know your enemy. Know your equipment. Know your missions. Know when your team and squadron are ready to launch.</p>
         <div class="command-status-strip" aria-label="Vanguard C4 command cycle">
           <span>Intent</span>
           <span>Readiness</span>
@@ -336,6 +353,26 @@
   <script>
     const audio = document.getElementById('wonder-audio');
     const toggle = document.getElementById('audio-toggle');
+
+    const launchDayLabel = document.getElementById('launch-day-label');
+    const launchClock = document.getElementById('launch-clock');
+    const launchTarget = new Date('2026-06-13T00:00:00-07:00');
+
+    function updateLaunchCountdown() {
+      if (!launchDayLabel || !launchClock) return;
+      const now = new Date();
+      const remaining = Math.max(0, launchTarget.getTime() - now.getTime());
+      const totalSeconds = Math.floor(remaining / 1000);
+      const days = Math.floor(totalSeconds / 86400);
+      const hours = Math.floor((totalSeconds % 86400) / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      const seconds = totalSeconds % 60;
+      launchDayLabel.textContent = remaining > 0 ? `D-${days + 1}` : 'D-Day';
+      launchClock.textContent = `${days}d ${String(hours).padStart(2, '0')}h ${String(minutes).padStart(2, '0')}m ${String(seconds).padStart(2, '0')}s`;
+    }
+
+    updateLaunchCountdown();
+    setInterval(updateLaunchCountdown, 1000);
 
     if (audio && toggle) {
       toggle.addEventListener('click', async () => {
