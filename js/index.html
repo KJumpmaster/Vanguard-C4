@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vanguard C4 | Command. Control. Communicate. Coordinate.</title>
+  <meta name="description" content="Vanguard C4 is the operational planning system for squadrons: SkyPilot, GI SCOUT, KEYFORGE, and NORDEN II." />
+  <link rel="stylesheet" href="css/styles.css" />
+
+<style>
+/* v4.1 launch polish */
+.mission-card.skypilot .section-copy{transform:translateY(-120px);}
+.mission-card.scout .section-copy{transform:translateY(-120px);}
+.mission-card.scout-brief .section-copy{transform:translateY(-120px);}
+</style>
+
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">VANGUARD <span>C4</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="videos.html">Videos</a>
+      <a href="#store">Launch</a>
+      <a href="support.html">Mission Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero scene" id="home">
+      <video class="hero-video" src="assets/video/hero/hero_aircraft.mp4" autoplay muted loop playsinline poster="assets/images/home/vanguard_c4_composite.png"></video>
+      <div class="hero-scrim"></div>
+      <div class="countdown-card" aria-label="Launch countdown">
+        <div class="count-label">Mission Launch</div>
+        <div id="countdown" class="countdown">Loading...</div>
+        <div class="count-sub">Tuesday · July 28 · 1200 Pacific</div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Independent Squadron Software</p>
+        <h1>VANGUARD <span>C4</span></h1>
+        <p class="tagline">Command. Control. Communicate. Coordinate.</p>
+        <p class="subline accent-subline">Redefining C4 for Virtual Squadrons.</p>
+        <p class="subline">The Operational Planning System for Squadrons.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#system">Enter the Mission</a>
+          <a class="button ghost" href="https://youtu.be/CdUjiq7d_7c" target="_blank" rel="noopener">Watch Intro</a>
+          <a class="button ghost" href="videos.html">Videos</a>
+          <button id="audioToggle" class="button ghost" type="button">Enable Mission Audio</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="system" class="scene system-overview">
+      <div class="section-copy centered">
+        <p class="eyebrow">Every Mission Begins with a Plan</p>
+        <h2>Four applications. One operational planning system.</h2>
+        <p>Prepare the force, receive the mission, build the strike, brief the team, and review the results.</p>
+      </div>
+      <img class="wide-art" src="assets/images/home/vanguard_c4_composite.png" alt="Vanguard C4 system overview showing SkyPilot, GI SCOUT, KEYFORGE, and NORDEN II" />
+    </section>
+
+    <section class="scene mission-card skypilot">
+      <div class="chapter-panel"><img src="assets/images/panels/SkyPilot_PANEL_POWERED_UP.png" alt="SkyPilot panel" /></div>
+      <div class="section-copy">
+        <p class="eyebrow">Prepare</p>
+        <h2>What can we deploy?</h2>
+        <p>Know what your squadron can bring to the battle.</p>
+      </div>
+      <div class="image-board skypilot-board">
+        <img class="shot large" src="assets/images/skypilot/skypilot_globe.png" alt="SkyPilot global aircraft operations view" />
+        <img class="shot tilt-left" src="assets/images/skypilot/skypilot_sector_map.png" alt="SkyPilot sector map" />
+        <img class="shot tilt-right" src="assets/images/skypilot/skypilot_3d_viewer.png" alt="SkyPilot 3D aircraft viewer" />
+      </div>
+    </section>
+
+    <section class="scene mission-card scout">
+      <div class="chapter-panel"><img src="assets/images/panels/Scout_PANEL_POWERED_UP.png" alt="GI SCOUT panel" /></div>
+      <div class="section-copy">
+        <p class="eyebrow">Squadron Command</p>
+        <h2>Is everyone ready?</h2>
+        <p>Coordinate every phase of squadron operations from one command center.</p>
+      </div>
+      <div class="image-board scout-board">
+        <img class="shot large" src="assets/images/scout/sqdn_readiness.png" alt="GI SCOUT squadron readiness dashboard" />
+      </div>
+    </section>
+
+    <section class="scene mission-card keyforge">
+      <div class="chapter-panel"><img src="assets/images/panels/KeyForge_PANEL_POWERED_UP.png" alt="KEYFORGE panel" /></div>
+      <div class="section-copy">
+        <p class="eyebrow">Mission Received</p>
+        <h2>Is everyone connected?</h2>
+        <p>Stay connected with your squadron anywhere in the world.</p>
+        <ul class="micro-list">
+          <li>AES-256 encrypted squadron communications</li>
+          <li>Secure Microsoft cloud synchronization</li>
+          <li>Automatic delivery of squadron mission packages</li>
+        </ul>
+      </div>
+      <div class="image-board keyforge-board">
+        <img class="shot large" src="assets/images/keyforge/keyforge_main.png" alt="KEYFORGE synchronization settings and status" />
+      </div>
+    </section>
+
+    <section class="scene mission-card norden-intro">
+      <div class="chapter-panel"><img src="assets/images/panels/Vanguard_C4_MASTER_PANEL_POWERED_UP.png" alt="Vanguard C4 master panel" /></div>
+      <div class="section-copy">
+        <p class="eyebrow">Build the Strike</p>
+        <h2>How do I prepare my aircraft?</h2>
+        <p>NORDEN II turns the assigned mission into a planned strike package.</p>
+      </div>
+      <div class="image-board norden-hub-board">
+        <img class="shot large" src="assets/images/norden/norden_hub.png" alt="NORDEN II module hub" />
+      </div>
+    </section>
+
+    <section class="scene feature-pair">
+      <div class="section-copy compact">
+        <p class="eyebrow">Loadout Manager</p>
+        <h2>What weapons should I carry?</h2>
+        <p>Match aircraft, stores, stations, and mission fit before launch.</p>
+      </div>
+      <img class="feature-shot" src="assets/images/norden/loadout_manager.png" alt="NORDEN II Loadout Manager" />
+    </section>
+
+    <section class="scene feature-pair reversed">
+      <div class="section-copy compact">
+        <p class="eyebrow">Strike Planning Console</p>
+        <h2>Will this loadout accomplish the mission?</h2>
+        <p>Evaluate effects, survivability, standoff, precision, and mission suitability.</p>
+      </div>
+      <img class="feature-shot" src="assets/images/norden/strike_package_console.png" alt="NORDEN II Strike Package Console" />
+    </section>
+
+    <section class="scene feature-pair">
+      <div class="section-copy compact">
+        <p class="eyebrow">Ballistics Computer</p>
+        <h2>How will the weapon perform?</h2>
+        <p>Compare trajectories, time of flight, impact speed, and intercept results.</p>
+      </div>
+      <img class="feature-shot" src="assets/images/norden/ballistics_computer.png" alt="NORDEN II Ballistics Computer" />
+    </section>
+
+    <section class="scene feature-pair reversed">
+      <div class="section-copy compact">
+        <p class="eyebrow">Mission Analysis & Charting</p>
+        <h2>What happens when I attack?</h2>
+        <p>Preview release, impact, and recovery before the aircraft leaves the runway.</p>
+      </div>
+      <img class="feature-shot" src="assets/images/norden/mac.png" alt="NORDEN II Mission Analysis and Charting" />
+    </section>
+
+    <section class="scene feature-pair">
+      <div class="section-copy compact">
+        <p class="eyebrow">3D Sandbox</p>
+        <h2>Can I visualize the release?</h2>
+        <p>Explore the attack path in three-dimensional tactical space.</p>
+      </div>
+      <img class="feature-shot" src="assets/images/norden/three_d_sandbox.png" alt="NORDEN II 3D Sandbox" />
+    </section>
+
+    <section class="scene arm-feature">
+      <div class="section-copy centered">
+        <p class="eyebrow">Engagement Geometry</p>
+        <h2>Can I safely prosecute this target?</h2>
+        <p class="gold-line">Premier SEAD planning capability.</p>
+        <p>Analyze emitter detection, missile reach, and safe launch corridors before committing to the attack.</p>
+      </div>
+      <img class="arm-close" src="assets/images/norden/engagement_geometry_closeup.png" alt="NORDEN II Engagement Geometry safe launch corridor" />
+      <img class="arm-full" src="assets/images/norden/arm_planner_full.png" alt="NORDEN II ARM Planner full screen" />
+    </section>
+
+    <section class="scene mission-card scout-brief">
+      <div class="chapter-panel"><img src="assets/images/panels/Scout_PANEL_POWERED_UP.png" alt="GI SCOUT panel" /></div>
+      <div class="section-copy">
+        <p class="eyebrow">Final Brief</p>
+        <h2>Is everyone ready?</h2>
+        <p>Every pilot. Every objective. Every phase understood.</p>
+      </div>
+      <div class="image-board scout-board">
+        <img class="shot large" src="assets/images/scout/sand_table.png" alt="GI SCOUT sand table mission briefing" />
+      </div>
+    </section>
+
+    <section class="scene mission-card debrief">
+      <div class="section-copy">
+        <p class="eyebrow">Mission Complete</p>
+        <h2>What did we learn?</h2>
+        <p>Capture lessons learned, recognize the team, and prepare for the next sortie.</p>
+      </div>
+      <div class="image-board scout-board">
+        <img class="shot large" src="assets/images/scout/mewall.png" alt="GI SCOUT personnel jacket and MeWall awards" />
+      </div>
+    </section>
+
+    <section class="scene why-vanguard">
+      <div class="section-copy centered">
+        <p class="eyebrow">Why Vanguard C4?</p>
+        <h2>One operational planning system.</h2>
+        <p>Built to help squadrons prepare, coordinate, communicate, and learn from every mission.</p>
+      </div>
+      <div class="capability-grid">
+        <div>Worldwide squadron communication</div>
+        <div>AES-256 encrypted squadron communications</div>
+        <div>Secure Microsoft cloud synchronization</div>
+        <div>Aircraft inventory and readiness management</div>
+        <div>Mission planning and strike package development</div>
+        <div>Squadron scheduling and Battle Rhythm planning</div>
+        <div>Pilot qualifications and Skills Matrix</div>
+        <div>Lessons Learned and mission history</div>
+      </div>
+    </section>
+
+    <section id="store" class="scene final-panel">
+      <img src="assets/images/panels/Vanguard_C4_MASTER_PANEL_POWERED_UP.png" alt="Vanguard C4 mission ready panel" />
+      <h2>Vanguard C4</h2>
+      <p>Command. Control. Communicate. Coordinate.</p>
+      <p class="gold-line">Launch: Tuesday · July 28 · 1200 Pacific</p>
+
+      <div class="store-card">
+        <div class="store-label">Free Mission-Planning Tools</div>
+        <p><strong>SkyPilot</strong> and <strong>NORDEN II</strong> launch free on Tuesday.</p>
+        <p>Download links will activate at launch.</p>
+      </div>
+
+      <div class="store-card">
+        <div class="store-label">GI SCOUT + KEYFORGE for Squadrons</div>
+        <p>Squadron managers interested in GI SCOUT and KEYFORGE can contact us directly for individual setup and service.</p>
+        <p><a href="mailto:JumpinKJ@gmail.com">JumpinKJ@gmail.com</a></p>
+      </div>
+
+
+      <div class="store-card">
+        <div class="store-label">Support Vanguard C4</div>
+        <p>SkyPilot and NORDEN II are free. If these tools help you or your squadron, you can support continued development.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="https://buymeacoffee.com/vanguardc4" target="_blank" rel="noopener">Buy Me a Coffee</a>
+          <a class="button ghost" href="https://www.paypal.com/qrcodes/managed/90c6eb90-9fac-4f3c-bb68-3d798b459147?utm_source=payandgetpaid" target="_blank" rel="noopener">Support with PayPal</a>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a class="button primary" href="videos.html">Watch Videos</a>
+        <a class="button ghost" href="mailto:JumpinKJ@gmail.com">Contact About GI SCOUT</a>
+        <a class="button ghost" href="support.html">Mission Support</a>
+      </div>
+      <p class="closing-line">Built by virtual pilots. Designed for squadrons.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>Vanguard C4</strong><br />
+      Contact and squadron inquiries: <a href="mailto:JumpinKJ@gmail.com">JumpinKJ@gmail.com</a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="videos.html">Videos</a>
+      <a href="#store">Launch</a>
+      <a href="support.html">Mission Support</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://buymeacoffee.com/vanguardc4" target="_blank" rel="noopener">Buy Me a Coffee</a>
+      <a href="https://www.paypal.com/qrcodes/managed/90c6eb90-9fac-4f3c-bb68-3d798b459147?utm_source=payandgetpaid" target="_blank" rel="noopener">PayPal</a>
+    </nav>
+    <span>© 2026 Vanguard C4</span>
+  </footer>
+
+  <audio id="missionAudio" src="assets/audio/wonder.mp3" loop></audio>
+  <script src="js/main.js"></script>
+</body>
+</html>
