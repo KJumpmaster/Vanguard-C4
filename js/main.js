@@ -1,5 +1,5 @@
 (function(){
-  const target = new Date('2026-07-28T12:00:00-07:00');
+  const target = new Date('2026-07-10T09:00:00-07:00');
   const el = document.getElementById('countdown');
   function tick(){
     if(!el) return;

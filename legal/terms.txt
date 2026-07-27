@@ -1,0 +1,100 @@
+TERMS OF SERVICE
+Static Line LLC — Software Products
+GI SCOUT | NORDEN II | KeyForge | Vanguard C4 | SKY PILOT
+Effective Date: July 1, 2026 Last Updated: July 1, 2026 Developer: Static Line LLC (an independent solo developer) Contact: support@static-line-llc.com Website: https://jolly-river-0aaa96110.7.azurestaticapps.net/
+
+
+
+Please read these Terms of Service ("Terms") carefully before installing or using any software product developed and distributed by Static Line LLC, including GI SCOUT, NORDEN II, KeyForge, and Vanguard C4 (collectively, the "Software"). By installing, accessing, or using the Software, you agree to be bound by these Terms. If you do not agree, do not install or use the Software.
+
+
+
+1. License Grant
+Static Line LLC grants you a limited, personal, non-exclusive, non-transferable, revocable license to install and use the Software solely for your own personal, non-commercial purposes. This license is a license to use the Software — it is not a sale. You do not acquire any ownership rights in the Software by installing or using it.
+
+
+
+2. Restrictions on Use
+You agree that you will not, and will not permit others to:
+
+• Copy, modify, adapt, translate, or create derivative works of the Software or any portion thereof
+• Reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the Software
+• Remove, alter, or obscure any proprietary notices, labels, or marks on the Software
+• Use the Software for any commercial purpose or for any public display without prior written consent from Static Line LLC
+• Cheat, exploit, or manipulate any game mechanics, data files, or system processes associated with the Software
+• Harass, threaten, or abuse other users in any multiplayer or networked feature of the Software
+• Distribute, sublicense, sell, resell, transfer, assign, or otherwise commercially exploit or make available to any third party the Software or any component thereof
+
+
+
+3. Intellectual Property
+The Software, including but not limited to all source code, object code, graphics, artwork, audio, music, user interface designs, trademarks, trade names, logos, and documentation, is the exclusive intellectual property of Static Line LLC and is protected by applicable copyright, trademark, and other intellectual property laws.
+
+All rights not expressly granted to you under these Terms are reserved by Static Line LLC. The names GI SCOUT, NORDEN II, KeyForge, Vanguard C4, and Static Line LLC are trademarks of the developer and may not be used without prior written permission.
+
+
+
+4. User Conduct
+By using the Software, you agree to conduct yourself in a manner consistent with applicable laws and in a way that does not interfere with other users' enjoyment of the Software. You are solely responsible for your interactions with other users in any networked or multiplayer features.
+
+Static Line LLC reserves the right, but has no obligation, to monitor user conduct and to take appropriate action, including suspension or termination of access, in response to violations of these Terms.
+
+
+
+5. Data and Privacy
+The Software is designed to operate locally on your device. All user data, including squadron rosters, mission records, personnel files, and operational data, is stored on your local machine and is not transmitted to Static Line LLC or any third-party server unless you explicitly use a networked feature such as the SONAR synchronization system in conjunction with a companion application.
+
+For full details on how data is handled, please review the Static Line LLC Privacy Policy, available at: https://jolly-river-0aaa96110.7.azurestaticapps.net/privacy.html
+
+
+
+6. Disclaimer of Warranties
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, STATIC LINE LLC DISCLAIMS ALL WARRANTIES, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.
+
+STATIC LINE LLC DOES NOT WARRANT THAT THE SOFTWARE WILL BE ERROR-FREE, UNINTERRUPTED, SECURE, OR FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS. YOUR USE OF THE SOFTWARE IS ENTIRELY AT YOUR OWN RISK.
+
+
+
+7. Limitation of Liability
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL STATIC LINE LLC BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, OR EXEMPLARY DAMAGES, INCLUDING BUT NOT LIMITED TO:
+
+• Loss of data or corruption of files
+• Damage to your device or hardware
+• Loss of profits or revenue
+• Emotional distress or personal injury
+
+THIS LIMITATION APPLIES REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT, NEGLIGENCE, STRICT LIABILITY, OR OTHERWISE) AND EVEN IF STATIC LINE LLC HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+IN NO EVENT SHALL STATIC LINE LLC'S TOTAL CUMULATIVE LIABILITY TO YOU EXCEED THE AMOUNT YOU PAID FOR THE SOFTWARE IN THE TWELVE (12) MONTHS PRECEDING THE CLAIM, OR FIFTY DOLLARS ($50.00), WHICHEVER IS GREATER.
+
+
+
+8. Termination
+These Terms are effective until terminated. Static Line LLC reserves the right, at its sole discretion, to:
+
+• Suspend or terminate your license to use the Software at any time, with or without cause, and with or without notice
+• Discontinue, modify, or suspend the Software or any feature thereof at any time
+• Terminate or discontinue any networked service, synchronization feature, or companion application integration at any time
+
+Upon termination, you must immediately cease all use of the Software and delete all copies in your possession. Sections 3, 6, 7, 9, and 10 of these Terms shall survive termination.
+
+
+
+9. Updates and Changes
+Static Line LLC may update, patch, or modify the Software at any time. Such updates may be required for continued use of the Software. Static Line LLC also reserves the right to update these Terms at any time. Continued use of the Software after any such changes constitutes your acceptance of the new Terms.
+
+
+
+10. Governing Law
+These Terms shall be governed by and construed in accordance with the laws of the United States and the state in which Static Line LLC operates, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be resolved in the appropriate courts of that jurisdiction.
+
+
+
+11. Contact
+If you have any questions about these Terms of Service, please contact:
+
+Static Line LLC Email: support@static-line-llc.com Website: https://jolly-river-0aaa96110.7.azurestaticapps.net/support.html
+
+
+
+By installing or using any Static Line LLC software product, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
