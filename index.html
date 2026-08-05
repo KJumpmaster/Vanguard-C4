@@ -14,6 +14,194 @@
 .mission-card.scout-brief .section-copy{transform:translateY(-120px);}
 </style>
 
+
+<style>
+/* Vanguard C4 launch-download polish */
+.download-zone{
+  width:min(1180px,94vw);
+  margin:34px auto 0;
+}
+.download-intro{
+  max-width:820px;
+  margin:0 auto 26px;
+  text-align:center;
+}
+.download-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:24px;
+}
+.download-card{
+  display:flex;
+  flex-direction:column;
+  min-height:310px;
+  padding:30px;
+  border:1px solid rgba(211,172,72,.46);
+  border-radius:18px;
+  background:linear-gradient(180deg,rgba(24,24,21,.96),rgba(10,10,9,.98));
+  box-shadow:0 16px 38px rgba(0,0,0,.32);
+  text-align:left;
+}
+.download-card h3{
+  margin:0 0 10px;
+  font-size:clamp(2rem,4vw,3.15rem);
+  line-height:.95;
+  letter-spacing:.02em;
+}
+.download-card p{
+  flex:1;
+  margin:0 0 22px;
+  font-size:1.03rem;
+}
+.download-card .button{
+  width:100%;
+  box-sizing:border-box;
+  text-align:center;
+  font-size:1.1rem;
+  padding:17px 22px;
+}
+.hash-box{
+  margin-top:15px;
+  font-size:.82rem;
+}
+.hash-box code{
+  display:block;
+  margin-top:8px;
+  overflow-wrap:anywhere;
+  opacity:.78;
+}
+.squadron-callout{
+  margin-top:22px;
+  padding:25px;
+  border:1px solid rgba(211,172,72,.35);
+  border-radius:16px;
+  background:rgba(211,172,72,.06);
+  text-align:center;
+}
+.squadron-callout h3{
+  margin:0 0 10px;
+  font-size:1.65rem;
+}
+.asset-heading{
+  margin-top:42px;
+  text-align:center;
+}
+.asset-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;
+  margin-top:22px;
+}
+.asset-card{
+  display:flex;
+  flex-direction:column;
+  padding:24px;
+  border:1px solid rgba(211,172,72,.34);
+  border-radius:16px;
+  background:rgba(8,8,7,.78);
+  text-align:left;
+}
+.asset-card h3{
+  margin:0 0 9px;
+  font-size:1.38rem;
+}
+.asset-card p{
+  flex:1;
+  margin:0 0 18px;
+  font-size:.96rem;
+}
+.asset-card .button{
+  width:100%;
+  box-sizing:border-box;
+  text-align:center;
+  padding:15px 16px;
+}
+.asset-notice{
+  margin-top:22px;
+  padding:20px 22px;
+  border-left:4px solid rgba(211,172,72,.9);
+  background:rgba(211,172,72,.055);
+  text-align:left;
+}
+.support-zone{
+  display:grid;
+  grid-template-columns:minmax(0,1.3fr) minmax(260px,.7fr);
+  gap:24px;
+  align-items:center;
+  margin-top:34px;
+  padding:30px;
+  border:1px solid rgba(211,172,72,.4);
+  border-radius:18px;
+  background:linear-gradient(180deg,rgba(24,24,21,.95),rgba(10,10,9,.98));
+}
+.support-copy{
+  text-align:left;
+}
+.support-copy h3{
+  margin:0 0 10px;
+  font-size:1.8rem;
+}
+.support-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin-top:20px;
+}
+.support-actions .button{
+  flex:1 1 220px;
+  text-align:center;
+  padding:17px 20px;
+}
+.paypal-qr{
+  display:block;
+  width:min(240px,70vw);
+  height:auto;
+  margin:0 auto;
+  padding:12px;
+  border-radius:16px;
+  background:#fff;
+}
+.youtube-band{
+  margin-top:34px;
+  padding:34px 24px;
+  border:1px solid rgba(211,172,72,.46);
+  border-radius:18px;
+  background:linear-gradient(135deg,rgba(95,16,16,.32),rgba(16,16,14,.96));
+  text-align:center;
+}
+.youtube-band h3{
+  margin:0 0 10px;
+  font-size:clamp(1.9rem,4vw,3rem);
+}
+.youtube-band .button{
+  display:inline-block;
+  min-width:min(430px,85vw);
+  margin-top:16px;
+  padding:19px 28px;
+  font-size:1.22rem;
+}
+.final-links{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:22px;
+}
+@media (max-width:820px){
+  .download-grid,
+  .asset-grid,
+  .support-zone{
+    grid-template-columns:1fr;
+  }
+  .download-card{
+    min-height:0;
+  }
+  .support-copy{
+    text-align:center;
+  }
+}
+</style>
+
 </head>
 <body>
   <header class="site-header">
@@ -240,110 +428,134 @@
       <img src="images/panels/Vanguard_C4_MASTER_PANEL_POWERED_UP.png" alt="Vanguard C4 mission ready panel" />
       <h2>Vanguard C4</h2>
       <p>Command. Control. Communicate. Coordinate.</p>
-      <p class="gold-line">Launch: Friday · July 31 · 1200 Pacific</p>
+      <p class="gold-line">Now Available</p>
 
-
-      <div class="store-card" style="padding:30px;">
-        <div class="store-label">Free Mission-Planning Software</div>
-        <p style="max-width:820px;margin:0 auto 24px;">
-          Download the official Vanguard C4 releases below. SkyPilot and NORDEN II are free proprietary software for personal and authorized virtual-squadron use.
-        </p>
-
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:24px;">
-          <div style="border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:26px;background:rgba(0,0,0,.22);">
-            <h2 style="margin-top:0;">SkyPilot</h2>
-            <p>Aircraft inventory, force composition, readiness, planning, and mission preparation.</p>
-            <a class="button primary" href="https://github.com/KJumpmaster/SKY-PILOT/releases" target="_blank" rel="noopener"
-               style="font-size:1.2rem;padding:18px 28px;width:100%;box-sizing:border-box;text-align:center;">
-              Download SkyPilot
-            </a>
-            <details style="margin-top:16px;text-align:left;">
-              <summary>SHA-256 verification</summary>
-              <code style="overflow-wrap:anywhere;">211be3346a4d85988bac11ae231ff51d8c7fa408770e0261953c3946ae735e12</code>
-            </details>
-          </div>
-
-          <div style="border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:26px;background:rgba(0,0,0,.22);">
-            <h2 style="margin-top:0;">NORDEN II</h2>
-            <p>Loadout planning, strike analysis, weapon performance, 3D rehearsal, and engagement geometry.</p>
-            <a class="button primary" href="https://github.com/KJumpmaster/NORDEN-II/releases" target="_blank" rel="noopener"
-               style="font-size:1.2rem;padding:18px 28px;width:100%;box-sizing:border-box;text-align:center;">
-              Download NORDEN II
-            </a>
-            <details style="margin-top:16px;text-align:left;">
-              <summary>SHA-256 verification</summary>
-              <code style="overflow-wrap:anywhere;">4677046995d7f81bdbc66d96ea5451c8d410f0182709ef9c30753ae3e072f363</code>
-            </details>
-          </div>
+      <div class="download-zone">
+        <div class="download-intro">
+          <p class="eyebrow">Free Mission-Planning Software</p>
+          <h2>Choose your mission-planning tool.</h2>
+          <p>SkyPilot and NORDEN II are free proprietary applications for personal and authorized virtual-squadron use.</p>
         </div>
 
-        <div style="margin-top:22px;border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:22px;">
-          <h3 style="margin-top:0;">GI SCOUT + KEYFORGE for Squadrons</h3>
-          <p>Squadron managers interested in command-and-control, scheduling, readiness, mission coordination, and secure synchronization can contact Ken Johnson directly.</p>
+        <div class="download-grid">
+          <article class="download-card">
+            <p class="eyebrow">Aircraft & Force Planning</p>
+            <h3>SkyPilot</h3>
+            <p>Manage aircraft, squadron capabilities, readiness, force composition, and mission preparation before the flight begins.</p>
+            <a class="button primary" href="https://github.com/KJumpmaster/SKY-PILOT/releases" target="_blank" rel="noopener">
+              Download SkyPilot
+            </a>
+            <details class="hash-box">
+              <summary>Verify download with SHA-256</summary>
+              <code>211be3346a4d85988bac11ae231ff51d8c7fa408770e0261953c3946ae735e12</code>
+            </details>
+          </article>
+
+          <article class="download-card">
+            <p class="eyebrow">Strike & Loadout Planning</p>
+            <h3>NORDEN II</h3>
+            <p>Plan aircraft loadouts, analyze weapons and release conditions, rehearse attacks, and evaluate engagement geometry.</p>
+            <a class="button primary" href="https://github.com/KJumpmaster/NORDEN-II/releases" target="_blank" rel="noopener">
+              Download NORDEN II
+            </a>
+            <details class="hash-box">
+              <summary>Verify download with SHA-256</summary>
+              <code>4677046995d7f81bdbc66d96ea5451c8d410f0182709ef9c30753ae3e072f363</code>
+            </details>
+          </article>
+        </div>
+
+        <div class="squadron-callout">
+          <p class="eyebrow">For Organized Virtual Squadrons</p>
+          <h3>GI SCOUT + KEYFORGE</h3>
+          <p>Need squadron command-and-control, readiness, scheduling, mission coordination, or secure synchronization? Contact Ken Johnson directly.</p>
           <a class="button ghost" href="mailto:JumpinKJ@gmail.com?subject=GI%20SCOUT%20and%20KEYFORGE%20Squadron%20Inquiry">
             Contact About GI SCOUT + KEYFORGE
           </a>
         </div>
-      </div>
 
-      <div class="store-card" style="padding:30px;">
-        <div class="store-label">Vanguard C4 3D Model Library</div>
-        <p>Optional aircraft, ordnance, and local-server downloads for the enhanced 3D experience.</p>
-
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:22px;">
-          <a class="button ghost" href="https://github.com/KJumpmaster/Vanguard-C4-Aircraft-Assets/releases/tag/v1.0.0" target="_blank" rel="noopener" style="padding:18px;">
-            Download Aircraft Models
-          </a>
-          <a class="button ghost" href="https://github.com/KJumpmaster/Weapon-Asset-Library-v1.0.0/releases/tag/1.0.0" target="_blank" rel="noopener" style="padding:18px;">
-            Download Weapon Models
-          </a>
-          <a class="button ghost" href="https://github.com/KJumpmaster/3D_Local_Server/releases/tag/1.0.0" target="_blank" rel="noopener" style="padding:18px;">
-            Download 3D Local Server
-          </a>
+        <div class="asset-heading">
+          <p class="eyebrow">Free Optional 3D Enhancement Packs</p>
+          <h2>Build out the full 3D experience.</h2>
+          <p>These optional downloads add aircraft, ordnance, and shared local-model support to SkyPilot and NORDEN II.</p>
         </div>
 
-        <details style="margin-top:22px;text-align:left;">
-          <summary>Model-library file verification hashes</summary>
-          <p><strong>Aircraft Models Part 01:</strong><br><code style="overflow-wrap:anywhere;">e1b3bb75401b721d8c2633230800e97153b2e87e1526e93bc2ca53e1b023f934</code></p>
-          <p><strong>Aircraft Models Part 02:</strong><br><code style="overflow-wrap:anywhere;">0e79d892d0da88687751dc740ad7b874afb409be295e8e1cb25711b692f413e1</code></p>
-          <p><strong>Aircraft Models Part 03:</strong><br><code style="overflow-wrap:anywhere;">c111df4d24cac3e7be5af288e77a504af3d6224e5e956a09974f140bda7b7ba6</code></p>
-          <p><strong>03 FINAL GLB READY:</strong><br><code style="overflow-wrap:anywhere;">aab249c331eaa5b4dde019594472ef896dfda3b13930dde13238fd0a9444a0e6</code></p>
-          <p><strong>Weapon Models:</strong><br><code style="overflow-wrap:anywhere;">c7a06d7fa0ba3b35bc92628a9945bd20c013b319f11cd93ae3f4c18c37583b6b</code></p>
-          <p><strong>3D Local Server:</strong><br><code style="overflow-wrap:anywhere;">31065012a5e7609216abcb5b159e9da31b47f31ada7be277a60f4db2e7496c72</code></p>
-          <p><strong>Readme Guide:</strong><br><code style="overflow-wrap:anywhere;">b4db4f82169d435ecb113801dec0269f8539dfcbba34fc159f95aef14455dd90</code></p>
+        <div class="asset-grid">
+          <article class="asset-card">
+            <h3>Aircraft Model Packs</h3>
+            <p>Download the aircraft-model release containing the available aircraft ZIP packages.</p>
+            <a class="button ghost" href="https://github.com/KJumpmaster/Vanguard-C4-Aircraft-Assets/releases/tag/v1.0.0" target="_blank" rel="noopener">
+              View Aircraft Downloads
+            </a>
+          </article>
+
+          <article class="asset-card">
+            <h3>Weapon Model Pack</h3>
+            <p>Download the separate ordnance-model release for compatible weapons and stores.</p>
+            <a class="button ghost" href="https://github.com/KJumpmaster/Weapon-Asset-Library-v1.0.0/releases/tag/1.0.0" target="_blank" rel="noopener">
+              View Weapon Downloads
+            </a>
+          </article>
+
+          <article class="asset-card">
+            <h3>3D Local Server</h3>
+            <p>Run the shared local model library used by SkyPilot and NORDEN II for enhanced 3D viewing.</p>
+            <a class="button ghost" href="https://github.com/KJumpmaster/3D_Local_Server/releases/tag/1.0.0" target="_blank" rel="noopener">
+              Download 3D Local Server
+            </a>
+          </article>
+        </div>
+
+        <details class="hash-box" style="margin-top:20px;text-align:left;">
+          <summary>3D download verification hashes</summary>
+          <p><strong>Aircraft Models Part 01</strong><code>e1b3bb75401b721d8c2633230800e97153b2e87e1526e93bc2ca53e1b023f934</code></p>
+          <p><strong>Aircraft Models Part 02</strong><code>0e79d892d0da88687751dc740ad7b874afb409be295e8e1cb25711b692f413e1</code></p>
+          <p><strong>Aircraft Models Part 03</strong><code>c111df4d24cac3e7be5af288e77a504af3d6224e5e956a09974f140bda7b7ba6</code></p>
+          <p><strong>03 FINAL GLB READY</strong><code>aab249c331eaa5b4dde019594472ef896dfda3b13930dde13238fd0a9444a0e6</code></p>
+          <p><strong>Weapon Models</strong><code>c7a06d7fa0ba3b35bc92628a9945bd20c013b319f11cd93ae3f4c18c37583b6b</code></p>
+          <p><strong>3D Local Server</strong><code>31065012a5e7609216abcb5b159e9da31b47f31ada7be277a60f4db2e7496c72</code></p>
         </details>
 
-        <div style="margin-top:24px;padding:18px;border-left:4px solid currentColor;text-align:left;">
+        <div class="asset-notice">
           <strong>Protected 3D Assets — Not Open Source</strong>
-          <p style="margin-bottom:0;">
-            The aircraft and weapon model files are proprietary and are provided solely for use with official copies of NORDEN II, SkyPilot, and related Vanguard C4 applications. They may not be copied, repackaged, resold, uploaded, converted, published, or used in another project without written permission. Please share the official Vanguard C4 download page instead of redistributing the files.
-          </p>
+          <p>The aircraft and weapon model files are proprietary and are provided solely for use with official copies of NORDEN II, SkyPilot, and related Vanguard C4 applications. Please share the official Vanguard C4 download page instead of redistributing the files.</p>
         </div>
-      </div>
 
-      <div class="store-card">
-        <div class="store-label">Support Vanguard C4</div>
-        <p>SkyPilot, NORDEN II, and the Vanguard C4 library of 3D aircraft and ordnance models are free. If these tools help you or your squadron, you can support their continued development.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://buymeacoffee.com/vanguardc4" target="_blank" rel="noopener" style="font-size:1.25rem; padding:18px 30px;">☕ Buy Me a Coffee</a>
-          <a class="button ghost" href="https://www.paypal.com/qrcodes/managed/90c6eb90-9fac-4f3c-bb68-3d798b459147?utm_source=payandgetpaid" target="_blank" rel="noopener">Support with PayPal</a>
-        </div>
-        <div style="margin-top:24px; text-align:center;">
-          <a href="https://www.paypal.com/qrcodes/managed/90c6eb90-9fac-4f3c-bb68-3d798b459147?utm_source=payandgetpaid" target="_blank" rel="noopener" aria-label="Support Vanguard C4 with PayPal">
-            <img src="images/Paypal_qrcode.png" alt="PayPal QR code for supporting Vanguard C4"
-                 style="width:min(260px,80vw); height:auto; background:#fff; padding:12px; border-radius:16px;" />
+        <div class="youtube-band">
+          <p class="eyebrow">Installation, Demonstrations & Training</p>
+          <h3>Watch Vanguard C4 on YouTube</h3>
+          <p>See the software in action and follow the installation and training videos before getting started.</p>
+          <a class="button primary" href="https://www.youtube.com/@KennethJohnson-w4l" target="_blank" rel="noopener">
+            ▶ Watch Demonstration & Training Videos
           </a>
-          <p style="margin-top:10px;">Scan the QR code or use the PayPal button above.</p>
+        </div>
 
+        <div class="support-zone">
+          <div class="support-copy">
+            <p class="eyebrow">Support Vanguard C4</p>
+            <h3>Help keep the free tools and model libraries moving forward.</h3>
+            <p>SkyPilot, NORDEN II, and the 3D aircraft and ordnance libraries are free. Support is completely optional and helps fund continued development and new assets.</p>
+            <div class="support-actions">
+              <a class="button primary" href="https://buymeacoffee.com/vanguardc4" target="_blank" rel="noopener">☕ Buy Me a Coffee</a>
+              <a class="button ghost" href="https://www.paypal.com/qrcodes/managed/90c6eb90-9fac-4f3c-bb68-3d798b459147?utm_source=payandgetpaid" target="_blank" rel="noopener">Support with PayPal</a>
+            </div>
+          </div>
+          <div>
+            <a href="https://www.paypal.com/qrcodes/managed/90c6eb90-9fac-4f3c-bb68-3d798b459147?utm_source=payandgetpaid" target="_blank" rel="noopener" aria-label="Support Vanguard C4 with PayPal">
+              <img class="paypal-qr" src="images/Paypal_qrcode.png" alt="PayPal QR code for supporting Vanguard C4" />
+            </a>
+          </div>
+        </div>
+
+        <div class="final-links">
+          <a class="button ghost" href="mailto:JumpinKJ@gmail.com">Contact Ken Johnson</a>
+          <a class="button ghost" href="support.html">Mission Support</a>
+        </div>
       </div>
 
-      <div class="hero-actions">
-        <a class="button primary" href="https://www.youtube.com/@KennethJohnson-w4l" target="_blank" rel="noopener" style="font-size:1.25rem; padding:18px 30px;">▶ Watch All Videos on YouTube</a>
-        <a class="button ghost" href="mailto:JumpinKJ@gmail.com">Contact About GI SCOUT + KEYFORGE</a>
-        <a class="button ghost" href="support.html">Mission Support</a>
-      </div>
       <p class="closing-line">Built by virtual pilots. Designed for squadrons.</p>
     </section>
+
   </main>
 
   <footer class="site-footer">
